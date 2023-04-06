@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/male-drummer-plays-drum-sticks-snare-drum-with-splashing-water-dark-room.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  filter: brightness(0.9) blur(3px);
+  z-index: -1;
+}
+
+img {
+  opacity: 0.5;
+}
+.header {
+  background-color: #03498abb;
+  text-align: left;
+  padding: 20px;
+  color: #ffffff;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px #030303;
+  font-size: 15px;
+}
+
+.discription {
+  padding: 16px;
+  margin-top: 80px;
+  padding-bottom: 30px;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 3);
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+.wrapper {
+  width: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 30vh;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background-color: none;
+}
+
+.key {
+  border: 2px solid #03498abb;
+  border-radius: 15px;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 40px;
+  transition: all 0.07s ease;
+  width: 20vh;
+  text-align: center;
+  color: #ffffffec;
+  background-color: #ffffff67;
+  box-shadow: 0 0 4px #03498a;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.playeffect {
+  transform: scale(0.8);
+  box-shadow: 0 0 1rem #92dce5;
+  color: #92dce5;
+  background: none;
+}
+
+kbd {
+  display: block;
+  font-size: 62px;
+}
+
+.sound {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffffde;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.key-history {
+  max-width: 100vh;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #03498a4b;
+  margin:20px auto;
+  max-width: 900px;
+
+}
+
+.keys-history, h1{
+  padding: 16px;
+  padding-bottom: 10px;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 3);
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper > * {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .key,
+  header {
+    flex: 25%;
+  }
+}
